@@ -1,0 +1,14 @@
+name: First Workflow  #Name of the workflow name
+on: workflow_dispatch #When the workflow will be executed. workflow_dispatch is to manually trigger this workflow.
+jobs:
+  first-job: #Name of the job
+    runs-on: ubuntu-latest #Define runner, where to run the job. https://docs.github.com/en/actions/using-github-hosted-runners/using-github-hosted-runners/about-github-hosted-runners
+    steps:
+      - name: Print greeting
+        run: echo "Hello World!" #Define a command to be executed
+      - name: Print goodby
+        run: exho "Done - bye!"
+      
+    
+    
+      
